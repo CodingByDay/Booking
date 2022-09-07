@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src='functionality.js'></script>
+</head>
+<body>
+    <center><h1>Book a room.</h1></center>
+    <br/>
+    <hr />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <div class="control-custom">
+    <div class="container" id="fake_button" onclick="toggle()">
+        <img src="user.png" alt="placeholder" width="13" height="13" />              
+        <div class="row adults">
+            <p class="nAdults">Odrasli</p>
+        </div>
+
+        <div class="row children">
+            <p class="nChildren">Otroci</p>
+
+        </div>
+
+    
+        <img src="down.png" alt="placeholder" width="13" height="13" />              
+
+    </div>
+
+<div class="form-popup" id="myForm">
+    <form class="form-container">
+        <div id="i_adults" style="margin-bottom: 0.5rem">
+            <input type="text" id="adult_counter" style="margin-right:2rem;"  value="0" />
+            <img src="up-arrow.png" width="12" height="12" onclick="increment_decrement('up_adult')" style="margin-right:2rem;"  id="up_adult" />
+            <img src="down-arrow.png" width="12" height="12" onclick="increment_decrement('down_adult')"  id="down_adult" />
+        </div>
+        <div id="i_children" style="margin-bottom: 0.5rem">
+            <input type="text" id="child_counter" value="0" style="margin-right:2rem;" />
+            <img src="up-arrow.png"   onclick="increment_decrement('up_child')" width="12" height="12" style="margin-right:2rem;"  id="up_child" />
+            <img src="down-arrow.png" width="12" height="12" onclick="increment_decrement('down_child')"  id="down_child" />
+        </div>
+
+        <div id="dinamic">
+
+
+        </div>
+    </form>
+</div>
+
+</div>
+</body>
+</html>

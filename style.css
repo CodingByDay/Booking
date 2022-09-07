@@ -1,0 +1,62 @@
+.form-custom-modal {
+    display: none;
+}
+.container p {
+    font-size: 0.9rem;
+}
+
+.container img {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+.container {
+
+    border: 0.2rem solid black;
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    width:20vh;
+}
+#adult_counter {
+	border: none;
+}
+#child_counter {
+	border: none;
+}
+.i_adults input, i_children input {
+
+    height: fit-content;
+}
+#up_child, #down_child, #up_adult, #down_adult {
+    cursor:pointer;
+}
+.container:hover {
+    cursor: pointer;
+    background-color: beige;
+}
+.control-custom {
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+}
+/* The popup form - hidden by default */
+.form-popup {
+    height: 30vh;
+    margin-left: -10vh;
+    transition: all .5s ease-in-out; /*make it smooth*/
+    width: 30vh;
+    display: none;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    justify-content: left;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
