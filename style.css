@@ -42,6 +42,11 @@
     display: flex;
     flex-direction: column;
 }
+#dinamic {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
 /* The popup form - hidden by default */
 .form-popup {
     height: 30vh;
@@ -56,6 +61,7 @@
   
   /* Add styles to the form container */
   .form-container {
+    position: relative;
     max-width: 300px;
     padding: 10px;
     background-color: white;
